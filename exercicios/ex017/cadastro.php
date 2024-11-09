@@ -1,3 +1,3 @@
 Parabéns!
 Seus dados foram enviados!
-Aguarde ser chamado(a).
+Aguarde o resultado.
