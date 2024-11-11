@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,h2{
+            text-align: center;
+        }
+        h1{
+            background-color:rgb(116, 115, 115);
+            color: white;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <h2>Preencha todos os campos com suas informações.</h2>
+    <form action="cadastro.php" method="post" autocomplete="on"></form>
+    <fieldset>
+        <legend>Dados pessoas básicos</legend>
+        <p><label for="inome">Nome</label> <input type="text" name="nome" id="inome" autocomplete="name" required placeholder="Nome Completo" minlength="25"></p>
+
+       <p><label for="inas">Data de Nascimento</label> <input type="date" name="nas" id="inas" required> </p>
+
+        <p><label for="itel">Telefone</label> <input type="tel" name="tel" id="itel" autocomplete="tel" required placeholder="(XX)XXXXX-XXXX"></p>
+
+        <p><label for="iemail">E-mail</label> <input type="email" name="email" id="iemail" required placeholder="seuemail@.com"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="imas"> <label for="imas">Masculino</label><br>
+
+        <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+    </fieldset>
+    <fieldset>
+        <legend>Esportes que mais gosta</legend>
+        <input type="checkbox" name="efut" id="iefut"> <label for="iefut">Futebol</label> <br>
+        <input type="checkbox" name="ebask" id="iebask"> <label for="iebask">BasketBall</label> <br>
+        <input type="checkbox" name="evolei" id="ievolei"> <label for="ievolei">Vôlei</label> <br>
+        <input type="checkbox" name="etenis" id="ietenis"> <label for="ietenis">Tênis</label> <br>
+        <input type="checkbox" name="enat" id="ienat"> <label for="ienat">Natação</label> <br>
+        <input type="checkbox" name="ebox" id="iebox"> <label for="iebox">Box</label>
+    </fieldset>
+    <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+</form>
+</body>
+</html>
