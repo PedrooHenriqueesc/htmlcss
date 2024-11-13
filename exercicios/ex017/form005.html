@@ -35,6 +35,12 @@
         <input type="checkbox" name="enat" id="ienat"> <label for="ienat">Natação</label> <br>
         <input type="checkbox" name="ebox" id="iebox"> <label for="iebox">Box</label>
     </fieldset>
+    <fieldset>
+        <legend>Nivel de satisfação com o produto</legend>
+        <p><label for="isast">Avalie</label> <input type="range" name="sast" id="isast" min="0" max="10" required value="5" oninput="ival.innerHTML = Number(isast.value)"> <output id="ival">5</output>
+        
+        </p>
+    </fieldset>
     <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
 </form>
 </body>
