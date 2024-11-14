@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*CONFIGURAÇÕES PARA IMPRESSORA*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+}
+menu{
+    display: none;
+}
+h2{
+    text-align: center;
+}
+main{
+    width: 100vw;
+    line-height: 1.5em;
+}
+article::after{ 
+    content: "Esse artigo foi impresso através de PhNwes.com.br";
+}
